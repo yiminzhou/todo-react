@@ -1,0 +1,56 @@
+.todo-list-item {
+  display: flex;
+  margin: $size-s 0;
+
+  &__label {
+    display: block;
+    width: 100%;
+  }
+
+  &__checkbox-input {
+    display: none;
+  }
+
+  &__checkbox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: $size-checkbox;
+    height: $size-checkbox;
+    margin-right: $size-s;
+    border-radius: 50%;
+    color: transparent;
+    font-size: 0.75em;
+    border: 1px solid $c-checkbox-border;
+    cursor: pointer;
+  }
+
+  &__button {
+    display: flex;
+    background: none;
+    border: 0;
+    outline: 0;
+    color: $c-delete-button;
+    font-size: 0.8em;
+    cursor: pointer;
+  }
+
+  &__button-label {
+    margin-left: $size-xs;
+  }
+
+  &--completed {
+    color: $c-task-completed;
+  }
+
+  &--completed &__label {
+    text-decoration: line-through;
+  }
+
+  &--completed &__checkbox {
+    border: 0;
+    background-color: $c-checkbox-bg;
+    color: $c-white;
+    border-color: $c-checkbox-bg;
+  }
+}

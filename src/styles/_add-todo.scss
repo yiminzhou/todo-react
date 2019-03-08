@@ -1,0 +1,34 @@
+.add-todo {
+  &__input-container {
+    display: flex;
+    padding: $size-s;
+    border-radius: 999px;
+    background-color: $c-input-bg;
+  }
+
+  &__input {
+    line-height: 1.5em;
+    margin: 0 $size-xs;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-size: $f-size-base;
+    background-color: transparent;
+  }
+
+  &__button {
+    width: $size-add-width;
+    height: $size-checkbox;
+    color: $c-white;
+    background-color: $c-add-bg;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__error {
+    padding: $size-s $size-m;
+    color: $c-error;
+  }
+}

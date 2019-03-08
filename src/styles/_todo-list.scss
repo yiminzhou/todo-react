@@ -1,0 +1,19 @@
+.todo-list {
+  margin: $size-l 0;
+
+  &__header {
+    font-size: 0.65em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__empty-msg {
+    margin-top: $size-s;
+  }
+}

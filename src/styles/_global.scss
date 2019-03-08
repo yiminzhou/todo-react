@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $c-app-bg;
+  font: $f-size-base/1 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+#app {
+  width: $size-app-width;
+  padding: $size-xl $size-l;
+  flex: none;
+  background-color: $c-white;
+  color: $c-font-base;
+}
